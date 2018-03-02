@@ -1,0 +1,29 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.10.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+group = 'com.hermanlee'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework:spring-context:4.2.8.RELEASE")
+	compile('org.apache.commons:commons-lang3:3.3.2')
+    compile('org.codehaus.groovy:groovy-all:2.4.7')
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+}
