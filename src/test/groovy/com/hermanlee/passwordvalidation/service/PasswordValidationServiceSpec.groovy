@@ -1,5 +1,6 @@
+package com.hermanlee.passwordvalidation.service
+
 import com.hermanlee.passwordvalidation.domain.CharClass
-import com.hermanlee.passwordvalidation.service.PasswordValidationService
 import com.hermanlee.passwordvalidation.utility.ValidationRuleBuilder
 import spock.lang.Shared
 import spock.lang.Specification
